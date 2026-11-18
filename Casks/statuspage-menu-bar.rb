@@ -1,6 +1,6 @@
 cask "statuspage-menu-bar" do
-  version "0.2.0"
-  sha256 "5606564dbcf0febabe376ef991c2415e0c6f452ce515d0a0405cd375f9a03625"
+  version "0.3.0"
+  sha256 "fa6e7044e4f8a18efe7431d6cd34f2cf4b468b511aacc8cfd53f75314f186741"
 
   url "https://github.com/robbertvancaem/statuspage-menu-bar/releases/download/v#{version}/Statuspage-Menu-Bar-v#{version}.zip"
   name "Statuspage Menu Bar"
