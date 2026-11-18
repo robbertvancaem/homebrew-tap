@@ -4,7 +4,10 @@ Personal Homebrew tap by [@robbertvancaem](https://github.com/robbertvancaem).
 
 ## Usage
 
+Homebrew only loads third-party casks you trust, so trust the tap once:
+
 ```bash
+brew trust robbertvancaem/tap
 brew install robbertvancaem/tap/<formula>
 ```
 
