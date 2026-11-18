@@ -4,7 +4,7 @@ cask "statuspage-menu-bar" do
 
   url "https://github.com/robbertvancaem/statuspage-menu-bar/releases/download/v#{version}/Statuspage-Menu-Bar-v#{version}.zip"
   name "Statuspage Menu Bar"
-  desc "Menu bar app showing live status of Claude, Kinsta, GitHub or any Statuspage page"
+  desc "Menu bar app showing live status of Claude, Kinsta, GitHub or any Statuspage"
   homepage "https://github.com/robbertvancaem/statuspage-menu-bar"
 
   livecheck do
@@ -12,14 +12,12 @@ cask "statuspage-menu-bar" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Statuspage Menu Bar.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Statuspage Menu Bar.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Statuspage Menu Bar.app"]
   end
 
   zap trash: [
