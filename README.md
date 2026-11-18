@@ -19,4 +19,4 @@ brew install <formula>
 
 | Cask | Description |
 |------|-------------|
-| [`claude-status-bar`](https://github.com/robbertvancaem/claude-status-bar) | Native macOS menu bar app that shows live Claude service status. |
+| [`statuspage-menu-bar`](https://github.com/robbertvancaem/statuspage-menu-bar) | Native macOS menu bar app that shows live status of Claude, Kinsta, GitHub or any Atlassian Statuspage page. Formerly `claude-status-bar`. |
